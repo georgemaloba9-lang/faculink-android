@@ -25,11 +25,11 @@ jobs:
           java-version: "17"
 
       - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
         with:
-          accept-android-sdk-licenses: true
+          packages: ''
 
-      - name: Install Android SDK packages
+      - name: Install Android packages
         run: |
           sdkmanager "platform-tools"
           sdkmanager "platforms;android-35"
